@@ -19,6 +19,7 @@ import com.techademy.services.BadgeService;
 @Transactional
 public class TestBadge {
 	
+	//nothing
 	
 	@Autowired
 	BadgeService badgeService;

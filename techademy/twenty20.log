@@ -1,0 +1,85 @@
+2018-05-11 17:27:45 INFO  GlobalSettings:113 - Trying to find Dozer configuration file: dozer.properties
+2018-05-11 17:27:45 WARN  GlobalSettings:118 - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2018-05-11 17:27:46 INFO  DozerInitializer:75 - Initializing Dozer. Version: 5.5.0, Thread Name: main
+2018-05-11 17:27:48 INFO  JMXPlatformImpl:66 - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2018-05-11 17:27:49 INFO  JMXPlatformImpl:66 - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2018-05-11 17:27:49 INFO  DozerBeanMapper:175 - Initializing a new instance of dozer bean mapper.
+2018-05-11 17:27:49 INFO  DozerBeanMapper:175 - Initializing a new instance of dozer bean mapper.
+2018-05-11 17:28:15 ERROR MappingProcessor:314 - Field mapping error -->
+  MapId: null
+  Type: null
+  Source parent class: com.techademy.webservices.v2.data.users.User
+  Source field name: data
+  Source field type: null
+  Source field value: null
+  Dest parent class: com.techademy.webservices.v2.data.users.User
+  Dest field name: data
+  Dest field type: com.techademy.webservices.v2.data.users.User
+org.dozer.MappingException: java.lang.reflect.InvocationTargetException
+	at org.dozer.util.MappingUtils.throwMappingException(MappingUtils.java:82)
+	at org.dozer.util.ReflectionUtils.invoke(ReflectionUtils.java:339)
+	at org.dozer.propertydescriptor.GetterSetterPropertyDescriptor.invokeWriteMethod(GetterSetterPropertyDescriptor.java:287)
+	at org.dozer.propertydescriptor.GetterSetterPropertyDescriptor.setPropertyValue(GetterSetterPropertyDescriptor.java:111)
+	at org.dozer.fieldmap.FieldMap.writeDestValue(FieldMap.java:96)
+	at org.dozer.MappingProcessor.writeDestinationValue(MappingProcessor.java:939)
+	at org.dozer.MappingProcessor.mapFromFieldMap(MappingProcessor.java:368)
+	at org.dozer.MappingProcessor.mapField(MappingProcessor.java:307)
+	at org.dozer.MappingProcessor.map(MappingProcessor.java:267)
+	at org.dozer.MappingProcessor.mapToDestObject(MappingProcessor.java:216)
+	at org.dozer.MappingProcessor.createByCreationDirectiveAndMap(MappingProcessor.java:202)
+	at org.dozer.MappingProcessor.mapGeneral(MappingProcessor.java:170)
+	at org.dozer.MappingProcessor.map(MappingProcessor.java:113)
+	at org.dozer.MappingProcessor.map(MappingProcessor.java:108)
+	at org.dozer.DozerBeanMapper.map(DozerBeanMapper.java:127)
+	at com.techademy.webservices.v2.data.users.User.setData(User.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.set(MethodProperty.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:99)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:242)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:118)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2986)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2091)
+	at com.techademy.adobe.services.V2Services.getUser(V2Services.java:122)
+	at com.techademy.test.TestWebServices.testGetUserv2(TestWebServices.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.dozer.util.ReflectionUtils.invoke(ReflectionUtils.java:329)
+	... 49 more
+Caused by: org.dozer.MappingException: Source object must not be null
+	at org.dozer.util.MappingUtils.throwMappingException(MappingUtils.java:87)
+	at org.dozer.util.MappingValidator.validateMappingRequest(MappingValidator.java:37)
+	at org.dozer.util.MappingValidator.validateMappingRequest(MappingValidator.java:42)
+	at org.dozer.MappingProcessor.map(MappingProcessor.java:112)
+	at org.dozer.MappingProcessor.map(MappingProcessor.java:108)
+	at org.dozer.DozerBeanMapper.map(DozerBeanMapper.java:127)
+	at com.techademy.webservices.v2.data.users.User.setData(User.java:43)
+	... 54 more

@@ -22,6 +22,8 @@ public class TestCatalog {
 	@Autowired
 	CatalogService catalogService;
 	
+	
+	//nothing
 	@Test
 	@Rollback(value=false)
 	public void testCatalog()
