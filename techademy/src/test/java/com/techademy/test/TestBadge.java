@@ -20,7 +20,7 @@ import com.techademy.services.BadgeService;
 public class TestBadge {
 	
 	//check test cases
-	
+	//badge test
 	@Autowired
 	BadgeService badgeService;
 	
