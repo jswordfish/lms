@@ -27,7 +27,7 @@ public class TestGroup {
 	@Test
 	@Rollback(value=false)
 	public void testCreateGroup() {
-		
+	//groups	
 		Groups group=new Groups();
 		group.setCreatedDate(new Date());
 		group.setGroupName("IT");
