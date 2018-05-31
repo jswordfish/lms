@@ -55,6 +55,15 @@ public class HighlyEffectiveSkillRecommendation extends Base{
 	public void setResourceType(String resourceType) {
 		this.resourceType = resourceType;
 	}
+
+	@Override
+	public String toString() {
+		return "HighlyEffectiveSkillRecommendation [organizationIdentifier=" + organizationIdentifier
+				+ ", highlyEffectiveSkill=" + highlyEffectiveSkill + ", resourceIdentifier=" + resourceIdentifier
+				+ ", resourceType=" + resourceType + "]";
+	}
+	
+	
 	
 	
 }

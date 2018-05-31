@@ -68,6 +68,14 @@ String organizationIdentifier;
 	public void setUrl(String url) {
 		this.url = url;
 	}
+
+	@Override
+	public String toString() {
+		return "JobAid [organizationIdentifier=" + organizationIdentifier + ", userName=" + userName + ", jobAidTag="
+				+ jobAidTag + ", additional=" + additional + ", url=" + url + "]";
+	}
+	
+	
 	
 	
 }

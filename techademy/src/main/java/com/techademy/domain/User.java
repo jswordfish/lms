@@ -56,6 +56,13 @@ public class User extends Base{
 	public void setOrganizationIdentifier(String organizationIdentifier) {
 		this.organizationIdentifier = organizationIdentifier;
 	}
+
+	@Override
+	public String toString() {
+		return "User [userName=" + userName + ", password=" + password + ", groupName=" + groupName
+				+ ", organizationIdentifier=" + organizationIdentifier + "]";
+	}
+	
 	
 	
 }

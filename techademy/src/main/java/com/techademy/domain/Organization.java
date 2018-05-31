@@ -39,6 +39,11 @@ public void setGroups(List<Groups> groups) {
 	this.groups = groups;
 }
 
+@Override
+public String toString() {
+	return "Organization [organizationIdentifier=" + organizationIdentifier + ", groups=" + groups + "]";
+}
+
 
 
 }

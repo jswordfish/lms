@@ -52,6 +52,14 @@ public class Groups extends Base{
 	public void setUsers(List<User> users) {
 		this.users = users;
 	}
+
+	@Override
+	public String toString() {
+		return "Groups [groupName=" + groupName + ", organizationIdentifier=" + organizationIdentifier + ", users="
+				+ users + "]";
+	}
+	
+	
 	
 	
 

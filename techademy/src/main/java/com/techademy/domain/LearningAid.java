@@ -75,6 +75,15 @@ public class LearningAid extends Base{
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
+
+	@Override
+	public String toString() {
+		return "LearningAid [organizationIdentifier=" + organizationIdentifier + ", tag=" + tag + ", videoLink="
+				+ videoLink + ", blogLink=" + blogLink + ", cloudLabLink=" + cloudLabLink + ", keyword=" + keyword
+				+ "]";
+	}
+	
+	
 	
 	
 }
