@@ -33,6 +33,7 @@ public class TestGroup {
 		group.setGroupName("IT");
 		group.setOrganizationIdentifier("B");
 		group.setDescription("done All");
+		group.setCreatedBy("ashu");
 		//group.getUsers();
 		groupService.saveOrUpdate(group);
 		
