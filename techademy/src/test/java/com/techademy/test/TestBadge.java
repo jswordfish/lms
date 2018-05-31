@@ -24,50 +24,50 @@ public class TestBadge {
 	@Autowired
 	BadgeService badgeService;
 	
-	@Test
+	/*@Test
 	@Rollback(value=false)
 	public void TestBadgeHolder()
 	{	//badge test
 		Badge badge=new Badge();
-		badge.setOrganizationIdentifier("infosys");
-		badge.setUserName("sagar");
-		badge.setBadgeName("excellent");
+		badge.setOrganizationIdentifier("wipro");
+		badge.setUserName("vinod");
+		badge.setBadgeName("good");
 		badge.setBadgeDescription("Excellent");
-		badge.setCreatedBy("Mr.amol");
+		badge.setCreatedBy("Mr.patel");
 		badge.setCreatedDate(new Date());
-		badge.setDeprecatedBy("Mr.das");
+		badge.setDeprecatedBy("Mr.wagh");
 		badge.setDeprecatedDate(new Date());
-		badge.setTenantId("101");
-		badge.setDescription("good");
-		badge.setLastModifiedBy("amit");
+		badge.setTenantId("102");
+		badge.setDescription("well");
+		badge.setLastModifiedBy("anuja");
 		badge.setLastModifiedDate(new Date());
 		badge.setVersion(1);
 		badgeService.saveOrUpdate(badge);
 		
-	}
+	}*/
 	
 	/*@Test
 	@Rollback(value=false)
 	public void TestDeleteBadge()
 	{
-		badgeService.delete(4);
+		badgeService.delete(2);
 	}*/
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void TestSearchBadgeByOrganizationIdentifierAndBadgeName()
 	{
-		Badge b=badgeService.SearchByOrganizationIdentifierAndBadgeName("infosys", "excellent");
+		Badge b=badgeService.SearchByOrganizationIdentifierAndBadgeName("wipro", "good");
 		System.out.println(b.toString());
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void searchByOrganizationIdentifier()
 	{
-		Badge b=badgeService.findByOrganizationIdentifier("infosys");
+		Badge b=badgeService.findByOrganizationIdentifier("wipro");
 		System.out.println(b.toString());
-	}*/
+	}
 	
 	@Test
 	@Rollback

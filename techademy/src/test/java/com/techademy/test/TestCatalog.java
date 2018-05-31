@@ -24,19 +24,19 @@ public class TestCatalog {
 	
 	
 	//nothing
-	@Test
+	/*@Test
 	@Rollback(value=false)
 	public void testCatalog()
 	{
 		Catalog catalog=new Catalog();
 		//test catalog
-		catalog.setCatalogName("EmployeeCatalog");
-		catalog.setOrganizationIdentifier("Emp1Catalog");
+		catalog.setCatalogName("Catalog");
+		catalog.setOrganizationIdentifier("Employee");
 		catalog.setGroups("employee");
 		catalog.setUsers("Admin");
 		catalog.setCreatedDate(new Date());
-		catalog.setCreatedBy("sameer");
-		catalog.setDeprecatedBy("amit");
+		catalog.setCreatedBy("vishal");
+		catalog.setDeprecatedBy("pankaj");
 		catalog.setDeprecatedDate(new Date());
 		catalog.setDescription("good content");
 		catalog.setLastModifiedBy("rajaram");
@@ -45,38 +45,38 @@ public class TestCatalog {
 	
 		catalogService.saveOrUpdate(catalog);
 		
-	}
+	}*/
 	
 	/*@Test
 	@Rollback(value=false)
 	public void testDeleteCatalog()
 	{
-		catalogService.delete(8);
+		catalogService.delete(5);
 	}*/
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void testSearchCatalog()
 	{
 		Catalog c=catalogService.findByOrganizationIdentifierAndCatalogName("Emp1Catalog", "EmployeeCatalog");
-		System.out.println(c.toString());
-	}*/
+		System.out.println("SearchCatalog "+c.toString());
+	}
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void testSearchByOrganizationIdentifier()
 	{
 		Catalog c=catalogService.findByOrganizationIdentifier("Emp1Catalog");
-		System.out.println(c.toString());
-	}*/
+		System.out.println("SearchByOrganizationIdentifier "+c.toString());
+	}
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void testfindAll()
 	{
 		List<Catalog> c=catalogService.findAll();
-		System.out.println(c);
-	}*/
+		System.out.println("findAll "+c);
+	}
 	
 	
 	

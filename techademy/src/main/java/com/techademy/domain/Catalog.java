@@ -71,6 +71,13 @@ public class Catalog extends Base{
 	public void setCourses(List<Course> courses) {
 		this.courses = courses;
 	}
+
+	@Override
+	public String toString() {
+		return "Catalog [organizationIdentifier=" + organizationIdentifier + ", catalogName=" + catalogName
+				+ ", groups=" + groups + ", users=" + users + ", courses=" + courses + "]";
+	}
+	
 	
 	
 }

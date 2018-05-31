@@ -241,6 +241,21 @@ public class Course extends Base{
 	public void setSkills(String skills) {
 		this.skills = skills;
 	}
+
+	@Override
+	public String toString() {
+		return "Course [organizationIdentifier=" + organizationIdentifier + ", courseIdentifier=" + courseIdentifier
+				+ ", courseName=" + courseName + ", courseDurationInhours=" + courseDurationInhours
+				+ ", courseDescription=" + courseDescription + ", coursePrerequisites=" + coursePrerequisites
+				+ ", courseCreatedOn=" + courseCreatedOn + ", isObsolete=" + isObsolete + ", courseSchedule="
+				+ courseSchedule + ", courseDueRetireDate=" + courseDueRetireDate + ", numberOfModules="
+				+ numberOfModules + ", classRoomCourseStartDateTime=" + classRoomCourseStartDateTime
+				+ ", classRoomCourseEndDateTime=" + classRoomCourseEndDateTime + ", location=" + location
+				+ ", trainingRoom=" + trainingRoom + ", address=" + address + ", instructorName=" + instructorName
+				+ ", courseCuricullum=" + courseCuricullum + ", urlForRegistration=" + urlForRegistration + ", authors="
+				+ authors + ", keyword=" + keyword + ", skills=" + skills + "]";
+	}
+	
 	
 	
 	

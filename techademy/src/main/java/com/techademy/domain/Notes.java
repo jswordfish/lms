@@ -74,6 +74,13 @@ public class Notes extends Base {
 	public void setNoteTag(String noteTag) {
 		this.noteTag = noteTag;
 	}
+
+	@Override
+	public String toString() {
+		return "Notes [organizationIdentifier=" + organizationIdentifier + ", userName=" + userName + ", noteTag="
+				+ noteTag + ", note=" + note + ", additional=" + additional + ", url=" + url + "]";
+	}
+	
 	
 	
 }

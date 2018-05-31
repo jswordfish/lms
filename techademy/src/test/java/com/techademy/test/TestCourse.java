@@ -23,27 +23,27 @@ public class TestCourse {
 	@Autowired
 	CourseService courseService;
 	
-	@Test
+	/*@Test
 	@Rollback(value=false)
 	public void testCreateCourse() 
 	{
 		//test course
 		Course course=new Course();
-		course.setOrganizationIdentifier("Technical subjects");
-		course.setCourseIdentifier("ct41");
+		course.setOrganizationIdentifier("Technical");
+		course.setCourseIdentifier("ct42");
 		course.setCourseName("java");
 		course.setCourseDurationInhours(250);
 		course.setCourseDescription("Core java");
 		course.setCoursePrerequisites("each level shhould completed");
 		course.setCourseCreatedOn(new Date());
-		course.setCreatedBy("mohan");
+		course.setCreatedBy("vishal");
 		course.setCreatedDate(new Date());
-		course.setDeprecatedBy("vishal");
+		course.setDeprecatedBy("mohan");
 		course.setDeprecatedDate(new Date());
-		course.setDescription("good material");
+		course.setDescription("good content");
 		course.setLastModifiedDate(new Date());
 		courseService.saveOrUpdate(course);
-	}
+	}*/
 	
 	/*@Test
 	@Rollback(value=false)
@@ -52,21 +52,21 @@ public class TestCourse {
 		courseService.delete(6);
 	}*/
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void findCourse()
 	{
-		Course c=courseService.findByOrganizationIdentifierAndCourseName("Technical course", "Android");
+		Course c=courseService.findByOrganizationIdentifierAndCourseName("Technical", "java");
 		System.out.println(c.toString());
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void TestSearchByOrganizationIdentifier()
 	{
-		Course c=courseService.findByOrganizationIdentifier("Technical course");
+		Course c=courseService.findByOrganizationIdentifier("Technical");
 		System.out.println(c.toString());
-	}*/
+	}
 	
 	@Test
 	@Rollback

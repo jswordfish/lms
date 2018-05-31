@@ -87,6 +87,14 @@ public class CourseStatistics extends Base{
 	public void setLevelOfCourse(String levelOfCourse) {
 		this.levelOfCourse = levelOfCourse;
 	}
+
+	@Override
+	public String toString() {
+		return "CourseStatistics [organizationIdentifier=" + organizationIdentifier + ", courseIdentifier="
+				+ courseIdentifier + ", courseName=" + courseName + ", numberOfLearnersEnrolled="
+				+ numberOfLearnersEnrolled + ", averageFeedbackRating=" + averageFeedbackRating + ", badgesAvailable="
+				+ badgesAvailable + ", levelOfCourse=" + levelOfCourse + "]";
+	}
 	
 	
 	

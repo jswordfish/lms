@@ -22,7 +22,7 @@ public class TestNotes {
 	@Autowired
 	NotesService notesService;
 	
-/*	@Test
+	/*@Test
 	@Rollback(value=false)
 	public void testCreateNotes()
 	{
@@ -51,13 +51,13 @@ public class TestNotes {
 		notesService.delete(2);
 	}*/
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void SearchNotes()
 	{
 		Notes n=notesService.SearchNotesByOrganizationIdentifierAndUserNameAndNoteTag("test cases", "sameer", "xyz");
 		System.out.println(n.toString());
-	}*/
+	}
 	
 	@Test
 	@Rollback
@@ -67,13 +67,13 @@ public class TestNotes {
 		System.out.println(n.toString());
 	}
 	
-	/*@Test
+	@Test
 	@Rollback
 	public void testFindAll()
 	{
 		List<Notes> n=notesService.findAll();
 		System.out.println(n);
-	}*/
+	}
 	
 	
 }
